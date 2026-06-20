@@ -1,2 +1,2 @@
-# lohit22-portfolio
+# portfolio
 Personal portfolio website built with HTML, CSS, and JavaScript
