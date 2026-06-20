@@ -10,6 +10,11 @@ body {
 }
 
 nav{
+     position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
     display: flex;
     justify-content: space-between;
     padding: 20px 40px;
@@ -29,8 +34,29 @@ nav ul{
     gap: 20px;
 }
 
+.hero-content {
+    display: flex;
+    align-items: center;
+    gap: 60px;
+}
+
+.profile-pic {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: center 10%;
+    border: 3px solid #ffffff;
+    flex-shrink: 0;
+}
+
+.hero-text {
+    display: flex;
+    flex-direction: column;
+}
+
 #hero{
-    padding: 60px;
+    padding: 120px 60px 60px 60px;
     display: flex;
     flex-direction: column;
     justify-content: center;
