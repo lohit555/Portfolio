@@ -127,11 +127,11 @@ nav ul{
 }
 
 #about p {
-    font-size: 20px;
+    font-size: 18px;
     color: #ffffff;
     margin-top: 10px;
     line-height: 1.8;
-    max-width: 900px;
+    max-width: 100%;
 }
 
 #projects{
@@ -290,11 +290,11 @@ nav ul{
     display: inline-flex;
     align-items: center;
     gap: 10px;
-    font-size: 18px;
+    font-size: 20px;
 }
 
 #tech i {
-    font-size: 36px;
+    font-size: 42px;
 }
 
 #contact{
@@ -324,9 +324,10 @@ nav ul{
     text-decoration: none;
     font-size: 16px;
     background-color: #001f60;
-    padding: 10px 24px;
+    padding: 14px 32px;
     border-radius: 8px;
 }
+
 .contact-links a:hover {
     background-color: #00aaff;
     color: #0a0f1e;
