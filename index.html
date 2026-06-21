@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <title>Lohitashwa Madhan</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
@@ -10,7 +11,7 @@
 <body>
     <nav>
         
-        <a href="#">Lohit</a>
+        <a href="#">LM</a>
         <ul>
             <li><a href="#about">About</a></li>
             <li><a href="#projects">Projects</a></li>
@@ -21,83 +22,75 @@
     </nav>
     
     <section id="hero">
-         <div class="hero-content">
+    <div class="hero-content">
         <img src="profile.jpg" alt="Lohit Madhan" class="profile-pic">
         <div class="hero-text">
-        <h1>Lohitashwa Madhan</h1>
-        <p>Second-year Software Engineering Student @ McMaster University</p>
-        <div class="box-group">
-            <div class="box">
-                <h3>My Projects</h3>
-                <p>Check out what I have built</p>
-                <a href="#projects" class="btn">View Projects</a>
-            </div>
-            <div class="box">
-                <h3>Contact Me</h3>
-                <p>Let us connect</p>
-                <a href="#contact" class="btn">Get in Touch</a>
+            <h1>Lohitashwa Madhan</h1>
+            <p>Second-year Software Engineering Student @ McMaster University</p>
+            <div class="box-group">
+                <div class="box">
+                    <h3>My Projects</h3>
+                    <p>Check out what I have built</p>
+                    <a href="#projects" class="btn">View Projects</a>
+                </div>
+                <div class="box">
+                    <h3>Contact Me</h3>
+                    <p>Let us connect</p>
+                    <a href="#contact" class="btn">Get in Touch</a>
+                </div>
             </div>
         </div>
-    </section>
+    </div>
+</section>
 
-    <section id="about">
-        <h2>About Me</h2>
-        <p>
-            I'm Lohit, a second-year Software Engineering Co-op student at McMaster University, 
-            graduating in 2028. My interests lie in full-stack development, backend engineering, 
-            AI-powered applications, and real-time systems. I enjoy turning ambitious ideas into 
-            working products and building software that creates real value for users.
-        </p>
-        <p>
-            Through hackathons such as MacHacks 2026 and MEC 2025, I've built and shipped 
-            full-stack projects under intense 24-hour deadlines. From integrating AI APIs and 
-            developing backend services with Node.js to designing game systems in Java, I enjoy 
-            tackling challenging problems and creating solutions that are both practical and impactful.
-        </p>
-        <p>
-            I'm currently seeking Summer 2026 co-op and internship opportunities in full-stack 
-            development, backend engineering, or product-focused software engineering roles where 
-            I can contribute, learn, and grow as a developer.
-        </p>
-        <p>
-            Outside of tech, I played cricket for nine years and served as team captain. We didn't 
-            win every match, but the experience taught me valuable lessons in leadership, teamwork, 
-            and resilience.
-        </p>
-    </section>
+<section id="about">
+    <h2>About Me</h2>
+    <p>I'm Lohit, a second-year Software Engineering Co-op student at McMaster University, 
+    graduating in 2028. My interests lie in full-stack development, backend engineering, 
+    AI-powered applications, and real-time systems. I enjoy turning ambitious ideas into 
+    working products and building software that creates real value for users.</p>
+    <p>Through hackathons such as MacHacks 2026 and MEC 2025, I've built and shipped 
+    full-stack projects under intense 24-hour deadlines. From integrating AI APIs and 
+    developing backend services with Node.js to designing game systems in Java, I enjoy 
+    tackling challenging problems and creating solutions that are both practical and impactful.</p>
+    <p>I'm currently seeking Summer 2026 co-op and internship opportunities in full-stack 
+    development, backend engineering, or product-focused software engineering roles where 
+    I can contribute, learn, and grow as a developer.</p>
+    <p>Outside of tech, I played cricket for nine years and served as team captain. We didn't 
+    win every match, but the experience taught me valuable lessons in leadership, teamwork, 
+    and resilience.</p>
+</section>
 
-    <section id="projects">
-        <h2>My Projects</h2>
+<section id="projects">
+    <h2>My Projects</h2>
+    <div class="projects-grid">
 
-        <h3>SafeGuard - AI Hazard Detection Web App</h3>
-        <p>
-            An AI-powered hazard detection web app built at MacHacks 2026. Users can upload images 
-            and the app uses Google Gemini to detect potential safety hazards in real time, supporting 
-            up to 8 concurrent images with automatic resizing.
-        </p>
-        <p>Tech Stack: Node.js, Vercel Serverless, Google Gemini API, React, Vite</p>
+        <div class="project-card">
+            <h3>SafeGuard - AI Hazard Detection Web App</h3>
+            <p>SafeGuard is an AI-powered workplace hazard detection platform developed at MacHacks 2026 that analyzes workplace photos to identify safety risks and generate severity-ranked hazards, scene descriptions, and prioritized safety recommendations. Built with Node.js, Vercel Serverless Functions, and the Google Gemini API, it supports multimodal analysis across multiple images and helps users quickly assess and address workplace safety concerns.</p>
+            <a href="https://github.com/lohit555/SafeGuard" target="_blank" class="card-link">View on GitHub</a>
+        </div>
 
-        <h3>Catan - Board Game Simulator with AI Agent</h3>
-        <p>
-            A Java-based board game simulator featuring a rule-based AI agent that makes intelligent 
-            decisions at runtime. Built as a team project with full UML design and test coverage.
-        </p>
-        <p>Tech Stack: Java, JUnit, Eclipse Papyrus, Strategy Design Pattern</p>
+        <div class="project-card">
+            <h3>Catan - Board Game Simulator with AI Agent</h3>
+            <p>Catan is a Java-based board game simulator inspired by Settlers of Catan, developed as a team project at McMaster University. The game models core mechanics such as resource management, settlements, cities, roads, trading, the Robber, and AI-driven gameplay. Built with Java, JUnit, and Eclipse Papyrus, the project features a rule-based computer player, UML-driven software design, and comprehensive testing to ensure accurate and reliable gameplay.</p>
+            <a href="https://github.com/lohit555/Catan" target="_blank" class="card-link">View on GitHub</a>
+        </div>
 
-        <h3>GeoShield - Real-Time Disaster Response Web App</h3>
-        <p>
-            A real-time disaster response web app built at MEC 2025. Users can submit help requests 
-            and view safe zones, with all updates instantly reflected across connected users via Socket.io.
-        </p>
-        <p>Tech Stack: Node.js, Express, Socket.io, REST APIs</p>
+        <div class="project-card">
+            <h3>GeoShield - Real-Time Disaster Response Web App</h3>
+            <p>GeoShield is a real-time disaster response web app developed at the McMaster Engineering Competition (MEC) 2025 that helps coordinators and responders manage help requests, track missions, and monitor safe zones across connected users. Built with Node.js, Express, Socket.io, and React with Google Maps API integration, it enables real-time coordination and live updates for emergency response scenarios through a scalable, event-driven architecture.</p>
+            <a href="https://github.com/lohit555/GeoShield" target="_blank" class="card-link">View on GitHub</a>
+        </div>
 
-        <h3>WorDex - Command-Line Wordle Game</h3>
-        <p>
-            A C-based command-line Wordle game with persistent game history, a leaderboard system, 
-            and color-coded terminal output for a polished playing experience.
-        </p>
-        <p>Tech Stack: C, File I/O, Command-Line</p>
-    </section>
+        <div class="project-card">
+            <h3>WorDex - Command-Line Wordle Game</h3>
+            <p>WorDex is a terminal-based Wordle-style game developed as a team project at McMaster University featuring user authentication, persistent game history, global leaderboards, and player statistics across sessions. Built using C with Makefiles and file I/O, it delivers a fully functional command-line gaming experience with structured data persistence and ranking systems.</p>
+            <a href="https://github.com/lohit555/WorDex" target="_blank" class="card-link">View on GitHub</a>
+        </div>
+
+    </div>
+</section>
 
     <section id="certifications">
     <h2>Certifications</h2>
@@ -111,48 +104,30 @@
     </div>
     </section>
 
-    <section id="skills">
-        <h2>Skills</h2>
-
-        <h3>Languages</h3>
-        <p>
-            <span><i class="devicon-python-plain colored"></i> Python</span>
-            <span><i class="devicon-java-plain colored"></i> Java</span>
-            <span><i class="devicon-c-plain colored"></i> C</span>
-            <span><i class="devicon-javascript-plain colored"></i> JavaScript</span>
-            <span><i class="devicon-html5-plain colored"></i> HTML</span>
-            <span><i class="devicon-css3-plain colored"></i> CSS</span>
-        </p>
-
-        <h3>Frameworks and Libraries</h3>
-        <p>
-            <span><i class="devicon-react-original colored"></i> React.js</span>
-            <span><i class="devicon-nodejs-plain colored"></i> Node.js</span>
-            <span><i class="devicon-express-original colored"></i> Express.js</span>
-        </p>
-
-        <h3>APIs and Tools</h3>
-        <p>
-            <span><i class="devicon-google-plain colored"></i> Google Gemini API</span>
-            <span><i class="devicon-socketio-original colored"></i> Socket.io</span>
-            <span><i class="devicon-junit5-plain colored"></i> JUnit</span>
-        </p>
-
-        <h3>Databases</h3>
-        <p>
-            <span><i class="devicon-mysql-plain colored"></i> SQL</span>
-        </p>
-
-        <h3>Software Tools</h3>
-        <p>
-            <span><i class="devicon-git-plain colored"></i> Git</span>
-            <span><i class="devicon-github-original colored"></i> GitHub</span>
-            <span><i class="devicon-vscode-plain colored"></i> VS Code</span>
-            <span><i class="devicon-intellij-plain colored"></i> IntelliJ IDEA</span>
-            <span><i class="devicon-linux-plain colored"></i> Linux</span>
-            <span><i class="devicon-vercel-original colored"></i> Vercel</span>
-        </p>
-    </section>
+    <section id="tech">
+    <h2>Tech Stack</h2>
+    <p>
+        <span><i class="devicon-python-plain colored"></i> Python</span>
+        <span><i class="devicon-java-plain colored"></i> Java</span>
+        <span><i class="devicon-c-plain colored"></i> C</span>
+        <span><i class="devicon-javascript-plain colored"></i> JavaScript</span>
+        <span><i class="devicon-html5-plain colored"></i> HTML</span>
+        <span><i class="devicon-css3-plain colored"></i> CSS</span>
+        <span><i class="devicon-react-original colored"></i> React.js</span>
+        <span><i class="devicon-nodejs-plain colored"></i> Node.js</span>
+        <span><i class="devicon-express-original colored"></i> Express.js</span>
+        <span><i class="devicon-google-plain colored"></i> Google Gemini API</span>
+        <span><i class="devicon-socketio-original colored"></i> Socket.io</span>
+        <span><i class="devicon-eclipse-plain colored"></i> Eclipse Papyrus</span>
+        <span><i class="devicon-mysql-plain colored"></i> SQL</span>
+        <span><i class="devicon-git-plain colored"></i> Git</span>
+        <span><i class="devicon-github-original colored"></i> GitHub</span>
+        <span><i class="devicon-vscode-plain colored"></i> VS Code</span>
+        <span><i class="devicon-intellij-plain colored"></i> IntelliJ IDEA</span>
+        <span><i class="devicon-linux-plain colored"></i> Linux</span>
+        <span><i class="devicon-vercel-original colored"></i> Vercel</span>
+    </p>
+</section>
 
     <section id="contact">
     <h2>Contact Me</h2>
