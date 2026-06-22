@@ -241,6 +241,12 @@ nav ul{
 .tag-purple { background-color: #2a1a4a; color: #b07aff; }
 .tag-orange { background-color: #3a2010; color: #ff8c42; }
 
+.card-buttons {
+    display: flex;
+    gap: 12px;
+    margin-top: 16px;
+}
+
 #certifications {
     padding: 60px;
     display: flex;
