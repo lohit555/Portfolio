@@ -360,16 +360,16 @@ footer{
 }
 
 @media (max-width: 768px) {
-    nav {
-        padding: 15px 20px;
+    .nav-subtitle {
+        display: none;
     }
 
     nav ul {
-        gap: 10px;
+        gap: 8px;
     }
 
     nav a {
-        font-size: 13px;
+        font-size: 12px;
     }
 
     #hero {
