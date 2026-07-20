@@ -178,15 +178,16 @@ nav ul{
 }
 
 .project-card {
-    background-color: #111827;
+    background-color: #141b2e;
     border: 1px solid #1e2a45;
     border-radius: 12px;
     padding: 24px;
-    transition: border-color 0.3s;
+    transition: border-color 0.3s, box-shadow 0.3s;
 }
 
 .project-card:hover {
     border-color: #00aaff;
+    box-shadow: 0 0 20px rgba(0, 170, 255, 0.25);
 }
 
 .project-card h3 {
