@@ -150,6 +150,7 @@ nav ul{
     padding: 60px;
     display: flex;
     flex-direction: column;
+    max-width: 900px;
 }
 
 #experience h2{
@@ -188,13 +189,13 @@ nav ul{
 
 .experience-meta {
     font-size: 13px;
-    color: #8a9bbf;
+    color: #ffffff;
     margin-top: 2px;
 }
 
 .experience-desc {
     font-size: 14px;
-    color: #8a9bbf;
+    color: #ffffff;
     line-height: 1.7;
     margin-top: 16px;
 }
