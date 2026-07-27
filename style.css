@@ -104,9 +104,11 @@ nav ul{
 }
 
 #hero p{
-    font-size: 20px;
-    color: #ffffff;
+    font-size: 17px;
+    color: #a8b3cc;
     margin-top: 10px;
+    max-width: 620px;
+    line-height: 1.5;
 }
 
 .btn{
