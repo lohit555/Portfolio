@@ -306,19 +306,6 @@ nav ul{
     margin-top: 0;
 }
 
-.project-date-badge {
-    display: inline-block;
-    font-size: 11px;
-    font-weight: 600;
-    color: #60aaff;
-    background-color: #1a3a5c;
-    padding: 3px 10px;
-    border-radius: 20px;
-    white-space: nowrap;
-    vertical-align: middle;
-    margin-left: 8px;
-}
-
 .project-card p {
     font-size: 14px;
     color: #8a9bbf;
