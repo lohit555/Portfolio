@@ -276,17 +276,34 @@ nav ul{
 
 .projects-grid {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
     gap: 24px;
     margin-top: 30px;
 }
 
 .project-card {
+    position: relative;
     background-color: #141b2e;
     border: 1px solid #1e2a45;
     border-radius: 12px;
-    padding: 24px;
+    padding: 24px 24px 24px 76px;
     transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.project-number {
+    position: absolute;
+    left: 24px;
+    top: 24px;
+    width: 36px;
+    height: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #1a3a5c;
+    color: #60aaff;
+    font-size: 16px;
+    font-weight: 700;
+    border-radius: 50%;
 }
 
 .project-card:hover {
