@@ -158,12 +158,42 @@ nav ul{
     margin-bottom: 30px;
 }
 
+.timeline {
+    position: relative;
+    padding-left: 34px;
+    margin-top: 10px;
+}
+
+.timeline::before {
+    content: "";
+    position: absolute;
+    left: 5px;
+    top: 8px;
+    bottom: 8px;
+    width: 2px;
+    background-color: #1e2a45;
+}
+
+.timeline-item {
+    position: relative;
+}
+
+.timeline-dot {
+    position: absolute;
+    left: -34px;
+    top: 8px;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: #00aaff;
+    box-shadow: 0 0 8px rgba(0, 170, 255, 0.6);
+}
+
 .experience-card {
     background-color: #141b2e;
     border: 1px solid #1e2a45;
     border-radius: 12px;
     padding: 28px 32px;
-    margin-top: 10px;
     transition: border-color 0.3s, box-shadow 0.3s;
 }
 
