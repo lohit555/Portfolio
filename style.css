@@ -261,22 +261,10 @@ nav ul{
     margin-bottom: 30px;
 }
 
-#projects h3{
-    font-size: 22px;
-    margin-top: 30px;
-    margin-bottom: 10px;
-}
-
-#projects p{
-    font-size: 16px;
-    color: #8a9bbf;
-    margin-top: 8px;
-    line-height: 1.8;
-}
 
 .projects-grid {
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr 1fr;
     gap: 24px;
     margin-top: 30px;
 }
@@ -286,22 +274,22 @@ nav ul{
     background-color: #141b2e;
     border: 1px solid #1e2a45;
     border-radius: 12px;
-    padding: 24px 24px 24px 76px;
+    padding: 22px 22px 22px 64px;
     transition: border-color 0.3s, box-shadow 0.3s;
 }
 
 .project-number {
     position: absolute;
-    left: 24px;
-    top: 24px;
-    width: 36px;
-    height: 36px;
+    left: 20px;
+    top: 22px;
+    width: 32px;
+    height: 32px;
     display: flex;
     align-items: center;
     justify-content: center;
     background-color: #1a3a5c;
     color: #60aaff;
-    font-size: 16px;
+    font-size: 15px;
     font-weight: 700;
     border-radius: 50%;
 }
@@ -313,8 +301,15 @@ nav ul{
 
 .project-card h3 {
     font-size: 18px;
-    margin-bottom: 12px;
+    margin-bottom: 6px;
     color: #ffffff;
+    margin-top: 0;
+}
+
+.project-tech-inline {
+    font-size: 13px;
+    font-weight: normal;
+    color: #8a9bbf;
 }
 
 .project-card p {
@@ -322,6 +317,30 @@ nav ul{
     color: #8a9bbf;
     line-height: 1.7;
     margin-bottom: 8px;
+}
+
+.project-card p.project-subheader {
+    font-size: 12px;
+    color: #00aaff;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.project-card p.project-pitch {
+    font-size: 14px;
+    color: #8a9bbf;
+    line-height: 1.6;
+    margin-top: 0;
+}
+
+.project-card p.project-action {
+    font-size: 14px;
+    color: #ffffff;
+    line-height: 1.6;
+    margin-top: 8px;
 }
 
 .card-link {
