@@ -159,7 +159,17 @@ nav ul{
 }
 
 .experience-card {
+    background-color: #141b2e;
+    border: 1px solid #1e2a45;
+    border-radius: 12px;
+    padding: 24px;
     margin-top: 10px;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.experience-card:hover {
+    border-color: #00aaff;
+    box-shadow: 0 0 20px rgba(0, 170, 255, 0.25);
 }
 
 .experience-header {
@@ -174,6 +184,13 @@ nav ul{
     border-radius: 8px;
     object-fit: cover;
     flex-shrink: 0;
+}
+
+.experience-date {
+    font-size: 14px;
+    color: #00aaff;
+    font-weight: 600;
+    margin-bottom: 6px;
 }
 
 .experience-info h3 {
