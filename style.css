@@ -278,34 +278,22 @@ nav ul{
     border-radius: 12px;
     padding: 22px 22px 22px 64px;
     transition: border-color 0.3s, box-shadow 0.3s;
-    overflow: hidden;
-}
-
-.project-thumbnail {
-    display: block;
-    width: calc(100% + 86px);
-    height: 180px;
-    object-fit: cover;
-    margin: -22px -22px 18px -64px;
-    background-color: #0a0f1e;
 }
 
 .project-number {
     position: absolute;
-    left: 14px;
-    top: 14px;
+    left: 20px;
+    top: 22px;
     width: 32px;
     height: 32px;
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: rgba(10, 15, 30, 0.85);
-    border: 1px solid rgba(96, 170, 255, 0.5);
+    background-color: #1a3a5c;
     color: #60aaff;
     font-size: 15px;
     font-weight: 700;
     border-radius: 50%;
-    z-index: 2;
 }
 
 .project-card:hover {
