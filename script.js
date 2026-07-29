@@ -154,6 +154,7 @@ const showcaseAction = document.getElementById('showcaseAction');
 const showcaseTags = document.getElementById('showcaseTags');
 const showcaseButtons = document.getElementById('showcaseButtons');
 const showcaseDots = document.getElementById('showcaseDots');
+const showcaseCounter = document.getElementById('showcaseCounter');
 const showcaseMedia = document.getElementById('showcaseMedia');
 const showcaseWinner = document.getElementById('showcaseWinner');
 
@@ -181,6 +182,8 @@ function renderProject(index) {
     document.querySelectorAll('.showcase-dot').forEach((dot, i) => {
         dot.classList.toggle('active', i === index);
     });
+
+    showcaseCounter.textContent = (index + 1) + ' / ' + projects.length;
 }
 
 const TRANSITION_DURATION = 300;
