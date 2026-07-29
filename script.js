@@ -184,13 +184,23 @@ function renderProject(index) {
     });
 }
 
+const CIRCULATE_DURATION = 700;
+
 function goToProject(index) {
     currentProject = index;
     const showcaseEl = document.querySelector('.project-showcase');
+
+    showcaseImage.classList.remove('showcase-circulate');
+    void showcaseImage.offsetWidth;
+    showcaseImage.classList.add('showcase-circulate');
+
     showcaseEl.classList.remove('showcase-fade');
     void showcaseEl.offsetWidth;
     showcaseEl.classList.add('showcase-fade');
-    renderProject(currentProject);
+
+    setTimeout(() => {
+        renderProject(currentProject);
+    }, CIRCULATE_DURATION / 2);
 }
 
 function nextProject() {
