@@ -78,10 +78,15 @@
         <h2><i class="fas fa-laptop-code"></i> My Projects</h2>
 
         <div class="project-showcase">
-            <div class="showcase-media" id="showcaseMedia" tabindex="0" role="button" aria-label="Show next project">
+            <div class="showcase-media" id="showcaseMedia" tabindex="0" aria-label="Use left and right arrow keys, or click either side, to browse projects">
                 <img id="showcaseImage" src="" alt="" class="showcase-img">
                 <span class="showcase-winner" id="showcaseWinner">&#127942; Winner</span>
-                <span class="showcase-next-hint">Click for next &rarr;</span>
+                <button class="showcase-zone showcase-zone-prev" id="showcaseZonePrev" aria-label="Previous project">
+                    <span class="showcase-zone-hint">&larr; Previous</span>
+                </button>
+                <button class="showcase-zone showcase-zone-next" id="showcaseZoneNext" aria-label="Next project">
+                    <span class="showcase-zone-hint">Next &rarr;</span>
+                </button>
             </div>
             <div class="showcase-details">
                 <h3 id="showcaseTitle"></h3>

@@ -205,6 +205,10 @@ function nextProject() {
     goToProject((currentProject + 1) % projects.length);
 }
 
+function prevProject() {
+    goToProject((currentProject - 1 + projects.length) % projects.length);
+}
+
 projects.forEach((project, i) => {
     const dot = document.createElement('button');
     dot.className = 'showcase-dot';
@@ -215,14 +219,19 @@ projects.forEach((project, i) => {
     showcaseDots.appendChild(dot);
 });
 
-showcaseMedia.addEventListener('click', () => {
-    nextProject();
-});
+const showcaseZonePrev = document.getElementById('showcaseZonePrev');
+const showcaseZoneNext = document.getElementById('showcaseZoneNext');
+
+showcaseZonePrev.addEventListener('click', prevProject);
+showcaseZoneNext.addEventListener('click', nextProject);
 
 showcaseMedia.addEventListener('keydown', (e) => {
-    if (e.key === 'Enter' || e.key === ' ') {
+    if (e.key === 'ArrowRight') {
         e.preventDefault();
         nextProject();
+    } else if (e.key === 'ArrowLeft') {
+        e.preventDefault();
+        prevProject();
     }
 });
 
