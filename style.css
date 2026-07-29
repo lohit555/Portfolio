@@ -694,7 +694,8 @@ footer{
     }
 
     .showcase-media {
-        min-height: 200px;
+        aspect-ratio: 16 / 9;
+        min-height: 0;
     }
 
     #about {
