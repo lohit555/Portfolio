@@ -158,7 +158,6 @@ const showcaseMedia = document.getElementById('showcaseMedia');
 const showcaseWinner = document.getElementById('showcaseWinner');
 
 let currentProject = 0;
-let rotationTimer = null;
 
 function renderProject(index) {
     const project = projects[index];
@@ -206,44 +205,25 @@ function nextProject() {
     goToProject((currentProject + 1) % projects.length);
 }
 
-function startRotation() {
-    rotationTimer = setInterval(nextProject, 5000);
-}
-
-function stopRotation() {
-    clearInterval(rotationTimer);
-}
-
 projects.forEach((project, i) => {
     const dot = document.createElement('button');
     dot.className = 'showcase-dot';
     dot.setAttribute('aria-label', 'Show project ' + (i + 1) + ': ' + project.title);
     dot.addEventListener('click', () => {
         goToProject(i);
-        stopRotation();
-        startRotation();
     });
     showcaseDots.appendChild(dot);
 });
 
 showcaseMedia.addEventListener('click', () => {
     nextProject();
-    stopRotation();
-    startRotation();
 });
 
 showcaseMedia.addEventListener('keydown', (e) => {
     if (e.key === 'Enter' || e.key === ' ') {
         e.preventDefault();
         nextProject();
-        stopRotation();
-        startRotation();
     }
 });
 
 renderProject(currentProject);
-startRotation();
-
-const showcaseEl = document.querySelector('.project-showcase');
-showcaseEl.addEventListener('mouseenter', stopRotation);
-showcaseEl.addEventListener('mouseleave', startRotation);

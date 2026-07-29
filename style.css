@@ -453,7 +453,7 @@ nav ul{
     align-items: center;
     gap: 6px;
     position: absolute;
-    left: 14px;
+    right: 14px;
     top: 14px;
     background-color: #3a3010;
     color: #f0c040;
