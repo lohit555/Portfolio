@@ -141,7 +141,7 @@ nav ul{
 }
 
 #about p {
-    font-size: 18px;
+    font-size: 17px;
     color: #ffffff;
     margin-top: 10px;
     line-height: 1.8;
@@ -558,6 +558,7 @@ nav ul{
     padding: 60px;
     display: flex;
     flex-direction: column;
+    max-width: 900px;
 }
 
 #certifications h2 {
@@ -575,7 +576,7 @@ nav ul{
     background-color: #001f60;
     padding: 24px 32px;
     border-radius: 12px;
-    font-size: 16px;
+    font-size: 17px;
     color: #ffffff;
     border: 1px solid transparent;
     transition: border 0.3s, box-shadow 0.3s;
@@ -597,6 +598,7 @@ nav ul{
     padding: 60px;
     display: flex;
     flex-direction: column;
+    max-width: 900px;
 }
 
 #tech h2{
@@ -626,6 +628,7 @@ nav ul{
     padding: 60px;
     display: flex;
     flex-direction: column;
+    max-width: 900px;
 }
 
 #contact h2{
@@ -634,7 +637,7 @@ nav ul{
 }
 
 #contact p{
-    font-size: 16px;
+    font-size: 17px;
     color: #ffffff;
     margin-bottom: 20px;
 }
