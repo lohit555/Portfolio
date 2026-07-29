@@ -184,15 +184,13 @@ function renderProject(index) {
     });
 }
 
-const CIRCULATE_DURATION = 700;
+const TRANSITION_DURATION = 300;
 
 function goToProject(index) {
     currentProject = index;
     const showcaseEl = document.querySelector('.project-showcase');
 
-    showcaseImage.classList.remove('showcase-circulate');
-    void showcaseImage.offsetWidth;
-    showcaseImage.classList.add('showcase-circulate');
+    showcaseImage.classList.add('showcase-transitioning');
 
     showcaseEl.classList.remove('showcase-fade');
     void showcaseEl.offsetWidth;
@@ -200,7 +198,8 @@ function goToProject(index) {
 
     setTimeout(() => {
         renderProject(currentProject);
-    }, CIRCULATE_DURATION / 2);
+        showcaseImage.classList.remove('showcase-transitioning');
+    }, TRANSITION_DURATION);
 }
 
 function nextProject() {
