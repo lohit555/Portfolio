@@ -74,13 +74,14 @@ const projects = [
     {
         image: 'Catan.webp',
         title: 'Catan - Board Game Simulator with AI Agent',
-        pitch: 'Catan is a Java-based board game simulator developed as a team project, modeling resource management, trading, and the Robber mechanic with an AI-driven computer player. Built at McMaster University between January 2026 and March 2026.',
+        pitch: 'Catan is a Java-based board game simulator developed as a team project, modeling settlements, cities, roads, and resource management across player turns. It supports human gameplay, trading, the Robber mechanic, and an AI-driven computer player, with a Python visualizer rendering the board state. Built at McMaster University between January 2026 and March 2026.',
         action: "Implemented the AI's decision-making using the Strategy pattern and designed the full UML class diagram in Eclipse Papyrus.",
         tags: [
             { label: 'Java', color: 'tag-orange' },
             { label: 'JUnit', color: 'tag-blue' },
             { label: 'Eclipse Papyrus', color: 'tag-purple' },
-            { label: 'UML', color: 'tag-yellow' }
+            { label: 'UML', color: 'tag-yellow' },
+            { label: 'Python', color: 'tag-green' }
         ],
         buttons: [
             { label: 'View on GitHub', href: 'https://github.com/lohit555/Catan' },
