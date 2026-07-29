@@ -25,10 +25,7 @@ const projects = [
     {
         image: 'GeoShield.png',
         title: 'GeoShield - Real-Time Disaster Response Web App',
-        badges: [
-            { text: 'McMaster Engineering Competition (MEC) &middot; Nov 2025' }
-        ],
-        pitch: 'GeoShield is a real-time disaster response web app that lets coordinators manage help requests, track missions, and monitor safe zones across every connected user.',
+        pitch: 'Built at the McMaster Engineering Competition (MEC) in November 2025. GeoShield is a real-time disaster response web app that lets coordinators manage help requests, track missions, and monitor safe zones across every connected user.',
         action: 'Built the Node.js and Express backend and implemented Socket.io so mission and safe-zone updates sync instantly across all connected users.',
         tags: [
             { label: 'Node.js', color: 'tag-green' },
@@ -45,10 +42,7 @@ const projects = [
     {
         image: 'WorDex.png',
         title: 'WorDex - Command-Line Wordle Game',
-        badges: [
-            { text: 'McMaster University &middot; Nov 2025 - Dec 2025' }
-        ],
-        pitch: "WorDex is a terminal-based Wordle-style game with user authentication, persistent history, and a global leaderboard, built as a team project using C and file I/O.",
+        pitch: 'Built at McMaster University between November 2025 and December 2025. WorDex is a terminal-based Wordle-style game with user authentication, persistent history, and a global leaderboard, using C and file I/O.',
         action: 'Designed the file I/O system for match history and built the leaderboard module ranking players by wins, win rate, and average guesses.',
         tags: [
             { label: 'C', color: 'tag-blue' },
@@ -63,10 +57,7 @@ const projects = [
     {
         image: 'SafeGuard.png',
         title: 'SafeGuard - AI-Powered Workplace Hazard Detection App',
-        badges: [
-            { text: 'MacHacks &middot; Mar 2026' }
-        ],
-        pitch: 'SafeGuard is an AI-powered workplace hazard detection app. Users upload site photos and receive a severity-ranked hazard list and action checklist powered by Gemini.',
+        pitch: 'Built at MacHacks in March 2026. SafeGuard is an AI-powered workplace hazard detection app. Users upload site photos and receive a severity-ranked hazard list and action checklist powered by Gemini.',
         action: 'Built the Vercel serverless backend that securely proxies Gemini calls and validated AI accuracy across 15+ diverse test images.',
         tags: [
             { label: 'Node.js', color: 'tag-green' },
@@ -83,10 +74,7 @@ const projects = [
     {
         image: 'Catan.png',
         title: 'Catan - Board Game Simulator with AI Agent',
-        badges: [
-            { text: 'McMaster University &middot; Jan 2026 - Mar 2026' }
-        ],
-        pitch: 'Catan is a Java-based board game simulator built as a team project, modeling resource management, trading, and the Robber mechanic with an AI-driven computer player.',
+        pitch: 'Built at McMaster University between January 2026 and March 2026. Catan is a Java-based board game simulator developed as a team project, modeling resource management, trading, and the Robber mechanic with an AI-driven computer player.',
         action: "Implemented the AI's decision-making using the Strategy pattern and designed the full UML class diagram in Eclipse Papyrus.",
         tags: [
             { label: 'Java', color: 'tag-orange' },
@@ -102,10 +90,7 @@ const projects = [
     {
         image: 'RivalRefs.png',
         title: 'RivalRefs - AI Football Commentary Web App',
-        badges: [
-            { text: 'Code the Cup Hackathon &middot; Jul 2026' }
-        ],
-        pitch: 'RivalRefs is an AI football commentary app where two rival AI commentators trade live roast-battle banter over a replay of the 2022 World Cup Final.',
+        pitch: 'Built at the Code the Cup Hackathon in July 2026. RivalRefs is an AI football commentary app where two rival AI commentators trade live roast-battle banter over a replay of the 2022 World Cup Final.',
         action: "Led our team's live demo, then directed a full migration to free-tier Gemini and Web Speech APIs, eliminating all costs.",
         tags: [
             { label: 'React.js', color: 'tag-purple' },
@@ -123,11 +108,8 @@ const projects = [
     {
         image: 'Expecta.png',
         title: 'Expecta - Pregnancy & Nursing Safety Web App',
-        badges: [
-            { text: '&#129352; 2nd Place', prize: true },
-            { text: 'Cursor Hackathon &middot; Jul 2026' }
-        ],
-        pitch: 'Expecta is an AI-powered pregnancy and breastfeeding safety app. It scans a barcode or ingredient list and returns a stage-specific Safe, Caution, or Avoid verdict.',
+        winner: true,
+        pitch: 'Built at the Cursor Hackathon in July 2026, where it won &#129352; 2nd place. Expecta is an AI-powered pregnancy and breastfeeding safety app. It scans a barcode or ingredient list and returns a stage-specific Safe, Caution, or Avoid verdict.',
         action: 'Directed the AI-assisted build, defining the safety-verdict logic sourced from ACOG, FDA, CDC, and NIH LactMed.',
         tags: [
             { label: 'React.js', color: 'tag-purple' },
@@ -143,11 +125,8 @@ const projects = [
     {
         image: 'RivalRuns.png',
         title: 'RivalRuns - Gesture-Controlled Two-Player Runner Game',
-        badges: [
-            { text: '&#129352; 2nd Place', prize: true },
-            { text: 'Hack the Valley &middot; Jul 2026' }
-        ],
-        pitch: 'RivalRuns is a two-player, two-laptop endless runner using full-body motion tracking, where one player dodges obstacles while a rival places them in real time using hand gestures.',
+        winner: true,
+        pitch: 'Built at Hack the Valley in July 2026, where it won &#129352; 2nd place. RivalRuns is a two-player, two-laptop endless runner using full-body motion tracking, where one player dodges obstacles while a rival places them in real time using hand gestures.',
         action: 'Built the Ursina 3D scene, deterministic collision detection, and the WebSocket architecture connecting both laptops in real time.',
         tags: [
             { label: 'Python', color: 'tag-orange' },
@@ -163,16 +142,20 @@ const projects = [
     }
 ];
 
+projects.forEach(project => {
+    const img = new Image();
+    img.src = project.image;
+});
+
 const showcaseImage = document.getElementById('showcaseImage');
-const showcaseNumber = document.getElementById('showcaseNumber');
 const showcaseTitle = document.getElementById('showcaseTitle');
-const showcaseSubheader = document.getElementById('showcaseSubheader');
 const showcasePitch = document.getElementById('showcasePitch');
 const showcaseAction = document.getElementById('showcaseAction');
 const showcaseTags = document.getElementById('showcaseTags');
 const showcaseButtons = document.getElementById('showcaseButtons');
 const showcaseDots = document.getElementById('showcaseDots');
-const showcaseMedia = document.querySelector('.showcase-media');
+const showcaseMedia = document.getElementById('showcaseMedia');
+const showcaseWinner = document.getElementById('showcaseWinner');
 
 let currentProject = 0;
 let rotationTimer = null;
@@ -182,14 +165,10 @@ function renderProject(index) {
 
     showcaseImage.src = project.image;
     showcaseImage.alt = project.title + ' screenshot';
-    showcaseNumber.textContent = index + 1;
     showcaseTitle.textContent = project.title;
+    showcaseWinner.style.display = project.winner ? 'flex' : 'none';
 
-    showcaseSubheader.innerHTML = project.badges.map(badge =>
-        `<span class="project-badge${badge.prize ? ' project-badge-prize' : ''}">${badge.text}</span>`
-    ).join('');
-
-    showcasePitch.textContent = project.pitch;
+    showcasePitch.innerHTML = project.pitch;
     showcaseAction.textContent = project.action;
 
     showcaseTags.innerHTML = project.tags.map(tag =>
@@ -207,9 +186,10 @@ function renderProject(index) {
 
 function goToProject(index) {
     currentProject = index;
-    showcaseMedia.parentElement.classList.remove('showcase-fade');
-    void showcaseMedia.parentElement.offsetWidth;
-    showcaseMedia.parentElement.classList.add('showcase-fade');
+    const showcaseEl = document.querySelector('.project-showcase');
+    showcaseEl.classList.remove('showcase-fade');
+    void showcaseEl.offsetWidth;
+    showcaseEl.classList.add('showcase-fade');
     renderProject(currentProject);
 }
 
@@ -235,6 +215,21 @@ projects.forEach((project, i) => {
         startRotation();
     });
     showcaseDots.appendChild(dot);
+});
+
+showcaseMedia.addEventListener('click', () => {
+    nextProject();
+    stopRotation();
+    startRotation();
+});
+
+showcaseMedia.addEventListener('keydown', (e) => {
+    if (e.key === 'Enter' || e.key === ' ') {
+        e.preventDefault();
+        nextProject();
+        stopRotation();
+        startRotation();
+    }
 });
 
 renderProject(currentProject);

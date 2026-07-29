@@ -426,6 +426,12 @@ nav ul{
     align-items: center;
     justify-content: center;
     min-height: 280px;
+    cursor: pointer;
+}
+
+.showcase-media:focus {
+    outline: 2px solid #00aaff;
+    outline-offset: 2px;
 }
 
 .showcase-img {
@@ -434,9 +440,40 @@ nav ul{
     object-fit: contain;
 }
 
-.showcase-number {
+.showcase-winner {
+    display: none;
+    align-items: center;
+    gap: 6px;
+    position: absolute;
     left: 14px;
     top: 14px;
+    background-color: #3a3010;
+    color: #f0c040;
+    font-size: 13px;
+    font-weight: 700;
+    padding: 6px 14px;
+    border-radius: 20px;
+    letter-spacing: 0.02em;
+}
+
+.showcase-next-hint {
+    position: absolute;
+    right: 14px;
+    bottom: 14px;
+    background-color: rgba(10, 15, 30, 0.8);
+    color: #ffffff;
+    font-size: 12px;
+    font-weight: 600;
+    padding: 6px 12px;
+    border-radius: 20px;
+    opacity: 0;
+    transition: opacity 0.25s ease;
+    pointer-events: none;
+}
+
+.showcase-media:hover .showcase-next-hint,
+.showcase-media:focus .showcase-next-hint {
+    opacity: 1;
 }
 
 .showcase-details {
