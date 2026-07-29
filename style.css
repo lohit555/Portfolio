@@ -567,7 +567,6 @@ nav ul{
     padding: 60px;
     display: flex;
     flex-direction: column;
-    max-width: 900px;
 }
 
 #certifications h2 {
@@ -607,7 +606,6 @@ nav ul{
     padding: 60px;
     display: flex;
     flex-direction: column;
-    max-width: 900px;
 }
 
 #tech h2{
