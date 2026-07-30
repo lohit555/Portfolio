@@ -43,7 +43,7 @@ const projects = [
         image: 'WorDex.webp',
         title: 'WorDex - Command-Line Wordle Game',
         pitch: 'WorDex is a terminal-based Wordle-style game with user authentication, persistent history, and a global leaderboard, using C and file I/O. Built at McMaster University between November 2025 and December 2025.',
-        action: 'Designed the file I/O system for match history and built the leaderboard module ranking players by wins, win rate, and average guesses.',
+        action: 'Built a timestamped game history log with color-coded WIN/LOSS entries ordered by recency, and a global leaderboard ranking players by wins, games played, losses, win rate, and average guesses.',
         tags: [
             { label: 'C', color: 'tag-blue' },
             { label: 'Makefile', color: 'tag-yellow' },
