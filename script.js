@@ -26,7 +26,7 @@ const projects = [
         image: 'GeoShield.webp',
         title: 'GeoShield - Real-Time Disaster Response Web App',
         pitch: 'GeoShield is a real-time disaster response platform connecting survivors requesting help with volunteers who respond, plus a coordinator dashboard to monitor operations, all visualized on a live interactive map. Built at the McMaster Engineering Competition (MEC) in November 2025.',
-        action: 'Built the Node.js and Express backend and implemented Socket.io so mission and safe-zone updates sync instantly across all connected users.',
+        action: 'Built the Node.js and Express backend APIs for accounts, help requests, and safe-zone data, implemented Socket.io for instant real-time sync, and traced and resolved request-flow bugs across user roles.',
         tags: [
             { label: 'Node.js', color: 'tag-green' },
             { label: 'Express', color: 'tag-blue' },
@@ -58,7 +58,7 @@ const projects = [
         image: 'SafeGuard.webp',
         title: 'SafeGuard - AI-Powered Workplace Hazard Detection App',
         pitch: 'SafeGuard is an AI-powered workplace hazard detection app. Users upload site photos and receive a severity-ranked hazard list and action checklist powered by Gemini. Built at MacHacks in March 2026.',
-        action: 'Built the Vercel serverless backend that securely proxies Gemini calls and validated AI accuracy across 15+ diverse test images.',
+        action: 'Engineered the Node.js serverless backend on Vercel to securely proxy Gemini API calls, integrated multi-image upload and live camera capture for up to 8 concurrent images, and validated AI accuracy across 15+ test images.',
         tags: [
             { label: 'Node.js', color: 'tag-green' },
             { label: 'Vercel', color: 'tag-blue' },
@@ -75,7 +75,7 @@ const projects = [
         image: 'Catan.webp',
         title: 'Catan - Board Game Simulator with AI Agent',
         pitch: 'Catan is a Java-based board game simulator developed as a team project, modeling settlements, cities, roads, and resource management across player turns. It supports human gameplay, trading, the Robber mechanic, and an AI-driven computer player, with a Python visualizer rendering the board state. Built at McMaster University between January 2026 and March 2026.',
-        action: "Implemented the AI's decision-making using the Strategy pattern and designed the full UML class diagram in Eclipse Papyrus.",
+        action: "Implemented the AI's decision-making in Java using the Strategy pattern, designed the full UML class diagram in Eclipse Papyrus, and authored JUnit partition and boundary tests covering board limits, resources, and building logic.",
         tags: [
             { label: 'Java', color: 'tag-orange' },
             { label: 'JUnit', color: 'tag-blue' },
