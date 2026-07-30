@@ -125,7 +125,7 @@ const projects = [
     },
     {
         image: 'RivalRuns.webp',
-        title: 'RivalRuns - Gesture-Controlled Two-Player Runner Game',
+        title: 'RivalRuns - Two-Player Gesture Runner Game',
         winner: true,
         pitch: 'RivalRuns is a two-player, two-laptop endless runner using full-body motion tracking, where one player dodges obstacles while a rival places them in real time using hand gestures. Built at Hack the Valley in July 2026, where it won &#129352; 2nd place.',
         action: 'Built the Ursina 3D scene, deterministic collision detection, and the WebSocket architecture connecting both laptops in real time.',
