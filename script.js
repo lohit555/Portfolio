@@ -138,7 +138,8 @@ const projects = [
             { label: 'CV', color: 'tag-green' }
         ],
         buttons: [
-            { label: 'View on GitHub', href: 'https://github.com/lohit555/RivalRuns' }
+            { label: 'View on GitHub', href: 'https://github.com/lohit555/RivalRuns' },
+            { label: 'Watch Demo', href: 'https://youtu.be/evwKSR_Tm4g' }
         ]
     }
 ];
