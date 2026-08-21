@@ -166,6 +166,7 @@ function renderProjects() {
         <article class="project-card spotlight-card">
             <div class="project-image-wrap">
                 <img class="project-image" src="${project.image}" alt="${project.title} project screenshot" loading="lazy">
+                <span class="project-image-title">${project.title}</span>
                 <span class="project-number">0${index + 1}</span>
                 ${project.award ? `<span class="project-award">${project.award}</span>` : ''}
             </div>
