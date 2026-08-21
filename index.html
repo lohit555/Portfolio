@@ -3,16 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio of Lohitashwa Madhan, a Software Engineering student and software developer at McMaster University.">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
-    <title>Lohitashwa Madhan's Portfolio</title>
+    <title>Lohitashwa Madhan | Software Developer</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <body>
-    <nav>
-        <a href="#">LM &nbsp;&nbsp;&nbsp;<span class="nav-subtitle">Portfolio</span></a>
-        <ul>
+    <div class="scroll-progress" id="scrollProgress" aria-hidden="true"></div>
+
+    <nav class="site-nav" id="siteNav">
+        <a class="brand" href="#hero" aria-label="Lohitashwa Madhan home">
+            <span class="brand-mark">LM</span>
+            <span class="nav-subtitle">Portfolio</span>
+        </a>
+        <button class="nav-toggle" id="navToggle" type="button" aria-label="Open navigation" aria-expanded="false" aria-controls="navLinks">
+            <i class="fas fa-bars"></i>
+        </button>
+        <ul id="navLinks" class="nav-links">
             <li><a href="#about">About</a></li>
             <li><a href="#experience">Experience</a></li>
             <li><a href="#projects">Projects</a></li>
@@ -21,146 +30,148 @@
             <li><a href="#contact">Contact</a></li>
         </ul>
     </nav>
-    
-    <section id="hero">
-        <div class="hero-bg" aria-hidden="true">
-            <div class="hero-orb hero-orb-a"></div>
-            <div class="hero-orb hero-orb-b"></div>
-            <div class="hero-grid"></div>
-        </div>
-        <div class="hero-content">
-            <div class="profile-wrap">
-                <img src="profile.jpg" alt="Lohit Madhan" class="profile-pic">
+
+    <main>
+        <section id="hero" class="hero-section">
+            <div class="hero-bg" aria-hidden="true">
+                <div class="hero-orb hero-orb-a"></div>
+                <div class="hero-orb hero-orb-b"></div>
+                <div class="hero-grid"></div>
             </div>
-            <div class="hero-text">
-                <span class="availability-badge"><span class="pulse-dot"></span>Open to Summer 2027 internships</span>
-                <h1>Lohitashwa Madhan</h1>
-                <p class="hero-role"><span class="role-static">I'm a</span> <span class="role-rotator" id="roleRotator">Software Developer</span></p>
-                <p class="hero-sub">Software Developer @ MES &middot; Third-Year Software Engineering Student @ McMaster University</p>
-                <div class="hero-buttons">
-                    <a href="#projects" class="btn btn-primary">View Projects</a>
-                    <a href="#contact" class="btn btn-outline">Get in Touch</a>
+            <div class="hero-content page-width">
+                <div class="profile-wrap">
+                    <img src="profile.jpg" alt="Lohit Madhan" class="profile-pic">
                 </div>
-            </div>
-        </div>
-        <a href="#about" class="scroll-indicator" aria-label="Scroll to About"><i class="fas fa-chevron-down"></i></a>
-    </section>
-
-    <section id="about">
-        <h2><i class="fas fa-user"></i> About Me</h2>
-        <p>I am Lohitashwa Madhan, a third-year Software Engineering Co-op student at McMaster University, 
-        graduating in 2028. My interests lie in full-stack development, backend engineering, 
-        AI-powered applications, and real-time systems. I enjoy turning ambitious ideas into 
-        working products and building software that creates real value for users.</p>
-        <p>Through multiple hackathon participations, I have built and shipped
-        full-stack projects under intense 24-hour deadlines. From integrating AI APIs and
-        developing backend services with Node.js to designing game systems in Java, I enjoy 
-        tackling challenging problems and creating solutions that are both practical and impactful.</p>
-        <p>I am currently seeking Summer 2027 co-op and internship opportunities in full-stack
-        development, backend engineering, or product-focused software engineering roles where
-        I can contribute, learn, and grow as a developer.</p>
-    </section>
-
-    <section id="experience">
-        <h2><i class="fas fa-briefcase"></i> Experience</h2>
-        <div class="timeline">
-            <div class="timeline-item">
-                <div class="timeline-dot"></div>
-                <div class="experience-card">
-                    <div class="experience-header">
-                        <img src="mes-logo.jpg" alt="McMaster Engineering Society" class="experience-logo">
-                        <div class="experience-info">
-                            <p class="experience-date">Jul 2026 - Present</p>
-                            <h3>Software Developer</h3>
-                            <p class="experience-company">McMaster Engineering Society (MES) - Infrastructure Technology Club</p>
-                        </div>
+                <div class="hero-text">
+                    <span class="availability-badge"><span class="pulse-dot"></span>Open to Summer 2027 internships</span>
+                    <p class="eyebrow">Software Engineering Co-op Student</p>
+                    <h1>Lohitashwa Madhan</h1>
+                    <p class="hero-role"><span class="role-static">I'm a</span> <span class="role-rotator" id="roleRotator">Software Developer</span></p>
+                    <p class="hero-sub">Software Developer @ MES &middot; McMaster University &middot; Building full-stack, AI-powered, and real-time products.</p>
+                    <div class="hero-buttons">
+                        <a href="#projects" class="btn btn-primary">Explore my work <i class="fas fa-arrow-down"></i></a>
+                        <a href="#contact" class="btn btn-outline">Let's connect <i class="fas fa-arrow-up-right-from-square"></i></a>
                     </div>
-                    <ul class="experience-desc">
-                        <li>Contributing to a 7-person team redesigning the McMaster Engineering Society website, with a focus on improving navigation, findability, and unifying the UI.</li>
-                    </ul>
                 </div>
             </div>
-        </div>
-    </section>
+            <a href="#about" class="scroll-indicator" aria-label="Scroll to About"><span>Scroll to explore</span><i class="fas fa-chevron-down"></i></a>
+        </section>
 
-    <section id="projects">
-        <h2><i class="fas fa-laptop-code"></i> My Projects</h2>
-
-        <div class="project-showcase">
-            <div class="showcase-media" id="showcaseMedia" tabindex="0" aria-label="Use left and right arrow keys, or click either side, to browse projects">
-                <img id="showcaseImage" src="" alt="" class="showcase-img">
-                <span class="showcase-winner" id="showcaseWinner">&#127942; Winner</span>
-                <button class="showcase-zone showcase-zone-prev" id="showcaseZonePrev" aria-label="Previous project">
-                    <span class="showcase-zone-hint">&larr; Previous</span>
-                </button>
-                <button class="showcase-zone showcase-zone-next" id="showcaseZoneNext" aria-label="Next project">
-                    <span class="showcase-zone-hint">Next &rarr;</span>
-                </button>
+        <section id="about" class="content-section">
+            <div class="page-width section-layout about-layout">
+                <div class="section-heading">
+                    <p class="eyebrow">A little about me</p>
+                    <h2><i class="fas fa-user"></i>Building with purpose</h2>
+                </div>
+                <div class="about-copy">
+                    <p>I am Lohitashwa Madhan, a third-year Software Engineering Co-op student at McMaster University, graduating in 2028. My interests lie in full-stack development, backend engineering, AI-powered applications, and real-time systems.</p>
+                    <p>Through multiple hackathon participations, I have built and shipped full-stack projects under intense 24-hour deadlines. I enjoy turning ambitious ideas into working products that are both practical and impactful.</p>
+                    <p>I am currently seeking Summer 2027 co-op and internship opportunities in full-stack development, backend engineering, or product-focused software engineering roles where I can contribute, learn, and grow.</p>
+                    <div class="stats-grid" aria-label="Portfolio highlights">
+                        <div class="stat-item"><strong>07</strong><span>Projects shipped</span></div>
+                        <div class="stat-item"><strong>05</strong><span>Hackathon builds</span></div>
+                        <div class="stat-item"><strong>2028</strong><span>Expected graduation</span></div>
+                    </div>
+                </div>
             </div>
-            <div class="showcase-details">
-                <h3 id="showcaseTitle"></h3>
-                <p class="project-pitch" id="showcasePitch"></p>
-                <p class="project-action" id="showcaseAction"></p>
-                <div class="tags" id="showcaseTags"></div>
-                <div class="card-buttons" id="showcaseButtons"></div>
+        </section>
+
+        <section id="experience" class="content-section section-tint">
+            <div class="page-width">
+                <div class="section-heading section-heading-wide">
+                    <p class="eyebrow">Where I contribute</p>
+                    <h2><i class="fas fa-briefcase"></i>Experience</h2>
+                    <p class="section-lead">Collaborating with teams to make software clearer, more useful, and easier to navigate.</p>
+                </div>
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <article class="experience-card spotlight-card">
+                            <div class="experience-header">
+                                <img src="mes-logo.jpg" alt="McMaster Engineering Society" class="experience-logo">
+                                <div class="experience-info">
+                                    <div class="experience-meta"><span>Jul 2026 - Present</span><span class="status-pill">Current</span></div>
+                                    <h3>Software Developer</h3>
+                                    <p class="experience-company">McMaster Engineering Society (MES) &middot; Infrastructure Technology Club</p>
+                                </div>
+                            </div>
+                            <ul class="experience-desc">
+                                <li>Contributing to a 7-person team redesigning the McMaster Engineering Society website, with a focus on improving navigation, findability, and unifying the UI.</li>
+                            </ul>
+                            <div class="experience-tags"><span>Team collaboration</span><span>UI redesign</span><span>Information architecture</span></div>
+                        </article>
+                    </div>
+                </div>
             </div>
-        </div>
+        </section>
 
-        <p class="showcase-counter" id="showcaseCounter"></p>
-        <div class="showcase-dots" id="showcaseDots"></div>
-    </section>
+        <section id="projects" class="content-section projects-section">
+            <div class="page-width">
+                <div class="section-heading section-heading-wide projects-heading">
+                    <div>
+                        <p class="eyebrow">Selected work</p>
+                        <h2><i class="fas fa-laptop-code"></i>Projects that solve problems</h2>
+                    </div>
+                    <p class="section-lead">A collection of full-stack apps, AI experiments, games, and systems work. Each card includes the problem, my contribution, and the technologies behind it.</p>
+                </div>
+                <div class="project-grid" id="projectGrid" aria-live="polite"></div>
+            </div>
+        </section>
 
-    <section id="certifications">
-        <h2><i class="fas fa-scroll"></i> Certifications</h2>
-        <div class="cert-grid">
-            <div class="cert-card">Python for Beginners <span>Simplilearn</span></div>
-            <div class="cert-card">Java Programming for Beginners <span>Simplilearn</span></div>
-            <div class="cert-card">Introduction to HTML <span>Simplilearn</span></div>
-            <div class="cert-card">JavaScript for Beginners <span>Simplilearn</span></div>
-            <div class="cert-card">Claude 101 <span>Anthropic</span></div>
-            <div class="cert-card">SQL and Relational Databases 101 <span>IBM Skills Network</span></div>
-            <div class="cert-card">Fundamentals of Generative AI <span>AWS</span></div>
-        </div>
-    </section>
+        <section id="certifications" class="content-section section-tint">
+            <div class="page-width">
+                <div class="section-heading section-heading-wide">
+                    <p class="eyebrow">Always learning</p>
+                    <h2><i class="fas fa-scroll"></i>Certifications</h2>
+                    <p class="section-lead">Foundational coursework across programming, web development, databases, and generative AI.</p>
+                </div>
+                <div class="cert-grid">
+                    <article class="cert-card spotlight-card"><span class="cert-icon"><i class="fab fa-python"></i></span><div><h3>Python for Beginners</h3><span>Simplilearn</span></div></article>
+                    <article class="cert-card spotlight-card"><span class="cert-icon"><i class="fab fa-java"></i></span><div><h3>Java Programming for Beginners</h3><span>Simplilearn</span></div></article>
+                    <article class="cert-card spotlight-card"><span class="cert-icon"><i class="fab fa-html5"></i></span><div><h3>Introduction to HTML</h3><span>Simplilearn</span></div></article>
+                    <article class="cert-card spotlight-card"><span class="cert-icon"><i class="fab fa-js"></i></span><div><h3>JavaScript for Beginners</h3><span>Simplilearn</span></div></article>
+                    <article class="cert-card spotlight-card"><span class="cert-icon"><i class="fas fa-robot"></i></span><div><h3>Claude 101</h3><span>Anthropic</span></div></article>
+                    <article class="cert-card spotlight-card"><span class="cert-icon"><i class="fas fa-database"></i></span><div><h3>SQL and Relational Databases 101</h3><span>IBM Skills Network</span></div></article>
+                    <article class="cert-card spotlight-card"><span class="cert-icon"><i class="fab fa-aws"></i></span><div><h3>Fundamentals of Generative AI</h3><span>AWS</span></div></article>
+                </div>
+            </div>
+        </section>
 
-    <section id="tech">
-        <h2><i class="fas fa-wrench"></i> Tech Stack</h2>
-        <p>
-            <span><i class="devicon-python-plain colored"></i> Python</span>
-            <span><i class="devicon-java-plain colored"></i> Java</span>
-            <span><i class="devicon-c-plain colored"></i> C</span>
-            <span><i class="devicon-javascript-plain colored"></i> JavaScript</span>
-            <span><i class="devicon-html5-plain colored"></i> HTML</span>
-            <span><i class="devicon-css3-plain colored"></i> CSS</span>
-            <span><i class="devicon-react-original colored"></i> React.js</span>
-            <span><i class="devicon-nodejs-plain colored"></i> Node.js</span>
-            <span><i class="devicon-express-original"></i> Express.js</span>
-            <span><i class="devicon-google-plain colored"></i> Google Gemini API</span>
-            <span><i class="devicon-socketio-original"></i> Socket.io</span>
-            <span><i class="devicon-eclipse-plain colored"></i> Eclipse Papyrus</span>
-            <span><i class="devicon-mysql-plain colored"></i> SQL</span>
-            <span><i class="devicon-git-plain colored"></i> Git</span>
-            <span><i class="devicon-github-original"></i> GitHub</span>
-            <span><i class="devicon-vscode-plain colored"></i> VS Code</span>
-            <span><i class="devicon-intellij-plain colored"></i> IntelliJ IDEA</span>
-            <span><i class="devicon-linux-plain"></i> Linux</span>
-            <span><i class="devicon-vercel-original"></i> Vercel</span>
-            <span><i class="devicon-netlify-plain colored"></i> Netlify</span>
-        </p>
-    </section>
+        <section id="tech" class="content-section">
+            <div class="page-width">
+                <div class="section-heading section-heading-wide">
+                    <p class="eyebrow">Tools I use</p>
+                    <h2><i class="fas fa-wrench"></i>Tech stack</h2>
+                    <p class="section-lead">A practical toolkit for taking an idea from architecture to a working, shipped product.</p>
+                </div>
+                <div class="tech-groups">
+                    <div class="tech-group"><h3>Languages</h3><div class="tech-list"><span><i class="devicon-python-plain colored"></i>Python</span><span><i class="devicon-java-plain colored"></i>Java</span><span><i class="devicon-c-plain colored"></i>C</span><span><i class="devicon-javascript-plain colored"></i>JavaScript</span></div></div>
+                    <div class="tech-group"><h3>Frontend &amp; backend</h3><div class="tech-list"><span><i class="devicon-react-original colored"></i>React.js</span><span><i class="devicon-html5-plain colored"></i>HTML</span><span><i class="devicon-css3-plain colored"></i>CSS</span><span><i class="devicon-nodejs-plain colored"></i>Node.js</span><span><i class="devicon-express-original"></i>Express.js</span><span><i class="devicon-socketio-original"></i>Socket.io</span></div></div>
+                    <div class="tech-group"><h3>Data, AI &amp; systems</h3><div class="tech-list"><span><i class="devicon-google-plain colored"></i>Gemini API</span><span><i class="devicon-mysql-plain colored"></i>SQL</span><span><i class="devicon-eclipse-plain colored"></i>Eclipse Papyrus</span><span><i class="devicon-linux-plain"></i>Linux</span></div></div>
+                    <div class="tech-group"><h3>Workflow &amp; delivery</h3><div class="tech-list"><span><i class="devicon-git-plain colored"></i>Git</span><span><i class="devicon-github-original"></i>GitHub</span><span><i class="devicon-vscode-plain colored"></i>VS Code</span><span><i class="devicon-intellij-plain colored"></i>IntelliJ IDEA</span><span><i class="devicon-vercel-original"></i>Vercel</span><span><i class="devicon-netlify-plain colored"></i>Netlify</span></div></div>
+                </div>
+            </div>
+        </section>
 
-    <section id="contact">
-        <h2><i class="fas fa-envelope"></i> Contact Me</h2>
-        <p>I am open to co-op and internship opportunities. Feel free to reach out!</p>
-        <div class="contact-links">
-            <a href="mailto:madhanl@mcmaster.ca"><i class="fas fa-envelope"></i> Outlook</a>
-            <a href="https://github.com/lohit555" target="_blank"><i class="fab fa-github"></i> GitHub</a>
-            <a href="https://www.linkedin.com/in/lohitashwa-madhan-ba0269338/" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
-        </div>
-    </section>
+        <section id="contact" class="content-section contact-section section-tint">
+            <div class="page-width contact-card">
+                <div>
+                    <p class="eyebrow">Let's build something</p>
+                    <h2><i class="fas fa-envelope"></i>Have an opportunity?</h2>
+                    <p>I am open to co-op and internship opportunities in full-stack development, backend engineering, and product-focused software engineering. Feel free to reach out!</p>
+                </div>
+                <div class="contact-links">
+                    <a href="mailto:madhanl@mcmaster.ca"><i class="fas fa-envelope"></i><span>madhanl@mcmaster.ca</span></a>
+                    <a href="https://github.com/lohit555" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i><span>GitHub</span></a>
+                    <a href="https://www.linkedin.com/in/lohitashwa-madhan-ba0269338/" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin"></i><span>LinkedIn</span></a>
+                </div>
+            </div>
+        </section>
+    </main>
 
     <footer>
-        <p>Designed and Built by Lohitashwa Madhan, 2026</p>
+        <p>Designed and built by Lohitashwa Madhan <span>&middot;</span> 2026</p>
+        <a href="#hero" aria-label="Back to top"><i class="fas fa-arrow-up"></i></a>
     </footer>
     <script src="script.js"></script>
 </body>
