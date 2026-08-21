@@ -21,6 +21,26 @@ document.querySelectorAll('section').forEach(section => {
     observer.observe(section);
 });
 
+const roles = ['Software Developer', 'Full-Stack Developer', 'AI App Builder'];
+const roleRotator = document.getElementById('roleRotator');
+const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+if (roleRotator) {
+    if (reduceMotion) {
+        roleRotator.textContent = roles[0];
+    } else {
+        let roleIndex = 0;
+        setInterval(() => {
+            roleRotator.classList.add('is-swapping');
+            setTimeout(() => {
+                roleIndex = (roleIndex + 1) % roles.length;
+                roleRotator.textContent = roles[roleIndex];
+                roleRotator.classList.remove('is-swapping');
+            }, 300);
+        }, 2600);
+    }
+}
+
 const projects = [
     {
         image: 'GeoShield.webp',

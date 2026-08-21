@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
     <title>Lohitashwa Madhan's Portfolio</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
@@ -23,17 +23,27 @@
     </nav>
     
     <section id="hero">
+        <div class="hero-bg" aria-hidden="true">
+            <div class="hero-orb hero-orb-a"></div>
+            <div class="hero-orb hero-orb-b"></div>
+            <div class="hero-grid"></div>
+        </div>
         <div class="hero-content">
-            <img src="profile.jpg" alt="Lohit Madhan" class="profile-pic">
+            <div class="profile-wrap">
+                <img src="profile.jpg" alt="Lohit Madhan" class="profile-pic">
+            </div>
             <div class="hero-text">
+                <span class="availability-badge"><span class="pulse-dot"></span>Open to Summer 2027 internships</span>
                 <h1>Lohitashwa Madhan</h1>
-                <p>Software Developer @ MES | Third-Year Software Engineering Student @ McMaster University | Seeking Summer 2027 SWE Internships</p>
-                <div class="box">
-                    <a href="#projects" class="btn">View Projects</a>
-                    <a href="#contact" class="btn">Get in Touch</a>
+                <p class="hero-role"><span class="role-static">I'm a</span> <span class="role-rotator" id="roleRotator">Software Developer</span></p>
+                <p class="hero-sub">Software Developer @ MES &middot; Third-Year Software Engineering Student @ McMaster University</p>
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn btn-primary">View Projects</a>
+                    <a href="#contact" class="btn btn-outline">Get in Touch</a>
                 </div>
             </div>
         </div>
+        <a href="#about" class="scroll-indicator" aria-label="Scroll to About"><i class="fas fa-chevron-down"></i></a>
     </section>
 
     <section id="about">
