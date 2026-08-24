@@ -139,7 +139,7 @@ const projects = [
         number: 7,
         title: 'RivalRuns',
         category: 'Computer vision · Game',
-        context: 'Hack the Valley',
+        context: 'Hack the Valley Hack Day',
         date: 'July 2026',
         award: '🥈 2nd place',
         pitch: 'A two-player, two-laptop endless runner using full-body motion tracking, where one player dodges obstacles while a rival places them in real time using hand gestures.',
