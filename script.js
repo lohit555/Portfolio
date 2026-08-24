@@ -135,25 +135,6 @@ const projects = [
         ]
     },
     {
-        image: 'Perimeter.png',
-        number: 8,
-        title: 'Perimeter',
-        category: 'FinTech . Security',
-        context: 'Ignition Hacks V7',
-        date: 'August 2026',
-        pitch: "A token isolation platform where every merchant gets its own encrypted payment token, locked to that merchant's domain and assigned its own spending limit. This ensures that a breach at any one merchant is automatically contained by revoking and replacing only the affected token.",
-        action: 'Built the n8n breach-containment automation workflow, connected the React dashboard to the live Vault API, implemented Supabase authentication, and deployed the full system on Vercel.',
-        tags: [
-            { label: 'React', color: 'tag-blue' },
-            { label: 'TypeScript', color: 'tag-blue' },
-            { label: 'Vault API', color: 'tag-green' },
-            { label: 'PostgreSQL', color: 'tag-blue' },
-            { label: 'n8n', color: 'tag-red' },
-            { label: 'Supabase', color: 'tag-green' }
-        ],
-        buttons: []
-    },
-    {
         image: 'RivalRuns.webp',
         number: 7,
         title: 'RivalRuns',
@@ -175,6 +156,25 @@ const projects = [
             { label: 'GitHub', icon: 'fab fa-github', href: 'https://github.com/lohit555/RivalRuns' },
             { label: 'Demo', icon: 'fas fa-play', href: 'https://youtu.be/evwKSR_Tm4g' }
         ]
+    },
+    {
+        image: 'Perimeter.png',
+        number: 8,
+        title: 'Perimeter',
+        category: 'FinTech . Security',
+        context: 'Ignition Hacks V7',
+        date: 'August 2026',
+        pitch: "A token isolation platform where every merchant gets its own encrypted payment token, locked to that merchant's domain and assigned its own spending limit. This ensures that a breach at any one merchant is automatically contained by revoking and replacing only the affected token.",
+        action: 'Built the n8n breach-containment automation workflow, connected the React dashboard to the live Vault API, implemented Supabase authentication, and deployed the full system on Vercel.',
+        tags: [
+            { label: 'React', color: 'tag-blue' },
+            { label: 'TypeScript', color: 'tag-blue' },
+            { label: 'Vault API', color: 'tag-green' },
+            { label: 'PostgreSQL', color: 'tag-blue' },
+            { label: 'n8n', color: 'tag-red' },
+            { label: 'Supabase', color: 'tag-green' }
+        ],
+        buttons: []
     }
 ];
 
