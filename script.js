@@ -167,14 +167,17 @@ const projects = [
         pitch: "A token isolation platform where every merchant gets its own encrypted payment token, locked to that merchant's domain and assigned its own spending limit. This ensures that a breach at any one merchant is automatically contained by revoking and replacing only the affected token.",
         action: 'Built the n8n breach-containment automation workflow, connected the React dashboard to the live Vault API, implemented Supabase authentication, and deployed the full system on Vercel.',
         tags: [
-            { label: 'React', color: 'tag-blue' },
-            { label: 'TypeScript', color: 'tag-blue' },
-            { label: 'Vault API', color: 'tag-green' },
-            { label: 'PostgreSQL', color: 'tag-blue' },
-            { label: 'n8n', color: 'tag-red' },
-            { label: 'Supabase', color: 'tag-green' }
+            { label: 'React', color: 'tag-perimeter-cyan' },
+            { label: 'TypeScript', color: 'tag-perimeter-violet' },
+            { label: 'Vault API', color: 'tag-perimeter-green' },
+            { label: 'PostgreSQL', color: 'tag-perimeter-navy' },
+            { label: 'n8n', color: 'tag-perimeter-red' },
+            { label: 'Supabase', color: 'tag-perimeter-teal' }
         ],
-        buttons: []
+        buttons: [
+            { label: 'GitHub', icon: 'fab fa-github', href: 'https://github.com/lohit555/Perimeter' },
+            { label: 'Live demo', icon: 'fas fa-arrow-up-right-from-square', href: 'https://perimeter-beta.vercel.app/' }
+        ]
     }
 ];
 

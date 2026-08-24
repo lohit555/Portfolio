@@ -914,6 +914,12 @@ h2 i {
 .tag-purple { background: rgba(167, 139, 250, 0.14); color: #c4b5fd; }
 .tag-orange { background: rgba(251, 146, 60, 0.13); color: #fdba74; }
 .tag-red { background: rgba(185, 28, 28, 0.18); color: #fca5a5; }
+.tag-perimeter-cyan { background: rgba(14, 116, 144, 0.22); color: #67e8f9; }
+.tag-perimeter-violet { background: rgba(109, 40, 217, 0.2); color: #c4b5fd; }
+.tag-perimeter-green { background: rgba(20, 83, 45, 0.42); color: #86efac; }
+.tag-perimeter-navy { background: rgba(30, 58, 95, 0.48); color: #93c5fd; }
+.tag-perimeter-red { background: rgba(127, 29, 29, 0.36); color: #fca5a5; }
+.tag-perimeter-teal { background: rgba(15, 118, 110, 0.3); color: #5eead4; }
 
 .card-buttons {
     display: flex;
