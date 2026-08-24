@@ -913,6 +913,7 @@ h2 i {
 .tag-yellow { background: rgba(250, 204, 21, 0.12); color: #fde68a; }
 .tag-purple { background: rgba(167, 139, 250, 0.14); color: #c4b5fd; }
 .tag-orange { background: rgba(251, 146, 60, 0.13); color: #fdba74; }
+.tag-red { background: rgba(185, 28, 28, 0.18); color: #fca5a5; }
 
 .card-buttons {
     display: flex;
