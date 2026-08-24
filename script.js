@@ -136,8 +136,9 @@ const projects = [
     },
     {
         image: 'Perimeter.png',
+        number: 8,
         title: 'Perimeter',
-        category: 'FinTech · Security',
+        category: 'FinTech . Security',
         context: 'Ignition Hacks V7',
         date: 'August 2026',
         pitch: "A token isolation platform where every merchant gets its own encrypted payment token, locked to that merchant's domain and assigned its own spending limit. This ensures that a breach at any one merchant is automatically contained by revoking and replacing only the affected token.",
@@ -154,6 +155,7 @@ const projects = [
     },
     {
         image: 'RivalRuns.webp',
+        number: 7,
         title: 'RivalRuns',
         category: 'Computer vision Â· Game',
         context: 'Hack the Valley',
@@ -185,7 +187,7 @@ function renderProjects() {
             <div class="project-image-wrap">
                 <img class="project-image" src="${project.image}" alt="${project.title} project screenshot" loading="lazy">
                 <span class="project-image-title">${project.title}</span>
-                <span class="project-number">0${index + 1}</span>
+                <span class="project-number">${String(project.number || index + 1).padStart(2, '0')}</span>
                 ${project.award ? `<span class="project-award">${project.award}</span>` : ''}
             </div>
             <div class="project-card-body">
