@@ -676,6 +676,21 @@ h2 i {
     font-size: 14px;
 }
 
+.experience-location {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    margin-top: 8px;
+    color: var(--muted);
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.experience-location i {
+    color: var(--accent-2);
+    font-size: 11px;
+}
+
 .experience-desc {
     margin: 24px 0 0 90px;
     padding-left: 20px;
