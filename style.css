@@ -1014,6 +1014,32 @@ h2 i {
     transition: border-color 0.3s ease, transform 0.3s ease, background 0.3s ease;
 }
 
+.cert-card.cert-primary {
+    border-color: rgba(56, 189, 248, 0.34);
+    background: linear-gradient(135deg, rgba(18, 35, 58, 0.86), rgba(14, 21, 38, 0.72));
+}
+
+.cert-card.cert-primary .cert-icon {
+    background: rgba(56, 189, 248, 0.16);
+    color: #7dd3fc;
+}
+
+.cert-card.cert-primary h3::after {
+    display: inline-block;
+    margin-left: 8px;
+    padding: 3px 6px;
+    border: 1px solid rgba(52, 211, 153, 0.28);
+    border-radius: 999px;
+    background: rgba(52, 211, 153, 0.1);
+    color: #6ee7b7;
+    content: 'Focus';
+    font-family: 'Inter', sans-serif;
+    font-size: 9px;
+    font-weight: 700;
+    letter-spacing: 0.04em;
+    vertical-align: middle;
+}
+
 .cert-card:hover {
     border-color: var(--border-strong);
     background: rgba(18, 28, 49, 0.9);
