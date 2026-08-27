@@ -16,46 +16,10 @@ if (roleRotator && !reduceMotion) {
 
 const projects = [
     {
-        image: 'GeoShield.webp',
-        title: 'GeoShield',
-        category: 'Full-stack · Real-time',
-        context: 'McMaster Engineering Competition',
-        date: 'November 2025',
-        pitch: 'A real-time disaster response platform connecting survivors requesting help with volunteers who respond, plus a coordinator dashboard to monitor operations, all visualized on a live interactive map.',
-        action: 'Built the Node.js and Express backend APIs for accounts, help requests, and safe-zone data, implemented Socket.io for instant real-time sync, and traced and resolved request-flow bugs across user roles.',
-        tags: [
-            { label: 'Node.js', color: 'tag-green' },
-            { label: 'Express', color: 'tag-blue' },
-            { label: 'Socket.io', color: 'tag-yellow' },
-            { label: 'React.js', color: 'tag-purple' },
-            { label: 'Google Maps API', color: 'tag-orange' }
-        ],
-        buttons: [
-            { label: 'GitHub', icon: 'fab fa-github', href: 'https://github.com/lohit555/GeoShield' },
-            { label: 'Demo', icon: 'fas fa-play', href: 'https://youtu.be/8tVIzGkGMsE' }
-        ]
-    },
-    {
-        image: 'WorDex.webp',
-        title: 'WorDex',
-        category: 'Systems · CLI game',
-        context: 'McMaster University',
-        date: 'November–December 2025',
-        pitch: 'A terminal-based Wordle-style game with user authentication, persistent history, and a global leaderboard, built in C with file I/O.',
-        action: 'Built a timestamped game history log with color-coded WIN/LOSS entries ordered by recency, and a global leaderboard ranking players by wins, games played, losses, win rate, and average guesses.',
-        tags: [
-            { label: 'C', color: 'tag-blue' },
-            { label: 'Makefile', color: 'tag-yellow' },
-            { label: 'File I/O', color: 'tag-green' }
-        ],
-        buttons: [
-            { label: 'GitHub', icon: 'fab fa-github', href: 'https://github.com/lohit555/WorDex' },
-            { label: 'Demo', icon: 'fas fa-play', href: 'https://youtu.be/MVTS1ZGwnl8' }
-        ]
-    },
-    {
         image: 'SafeGuard.webp',
+        number: 1,
         title: 'SafeGuard',
+        featured: true,
         category: 'AI · Full-stack',
         context: 'MacHacks',
         date: 'March 2026',
@@ -72,72 +36,34 @@ const projects = [
             { label: 'GitHub', icon: 'fab fa-github', href: 'https://github.com/lohit555/SafeGuard' },
             { label: 'Live demo', icon: 'fas fa-arrow-up-right-from-square', href: 'https://fall-guard-nine.vercel.app/' }
         ]
-    },
+    },,
     {
-        image: 'Catan.webp',
-        title: 'Catan',
-        category: 'Java · Software design',
-        context: 'McMaster University',
-        date: 'January–March 2026',
-        pitch: 'A Java-based board game simulator modeling settlements, cities, roads, resources, trading, the Robber mechanic, and an AI-driven computer player, with a Python visualizer for the board state.',
-        action: "Implemented the AI's decision-making in Java using the Strategy pattern, designed the full UML class diagram in Eclipse Papyrus, and authored JUnit partition and boundary tests covering board limits, resources, and building logic.",
+        image: 'GeoShield.webp',
+        number: 2,
+        title: 'GeoShield',
+        featured: true,
+        category: 'Full-stack · Real-time',
+        context: 'McMaster Engineering Competition',
+        date: 'November 2025',
+        pitch: 'A real-time disaster response platform connecting survivors requesting help with volunteers who respond, plus a coordinator dashboard to monitor operations, all visualized on a live interactive map.',
+        action: 'Built the Node.js and Express backend APIs for accounts, help requests, and safe-zone data, implemented Socket.io for instant real-time sync, and traced and resolved request-flow bugs across user roles.',
         tags: [
-            { label: 'Java', color: 'tag-orange' },
-            { label: 'JUnit', color: 'tag-blue' },
-            { label: 'Eclipse Papyrus', color: 'tag-purple' },
-            { label: 'UML', color: 'tag-yellow' },
-            { label: 'Python', color: 'tag-green' }
-        ],
-        buttons: [
-            { label: 'GitHub', icon: 'fab fa-github', href: 'https://github.com/lohit555/Catan' },
-            { label: 'Demo', icon: 'fas fa-play', href: 'https://youtu.be/I_Pxknsg1I0' }
-        ]
-    },
-    {
-        image: 'RivalRefs.webp',
-        title: 'RivalRefs',
-        category: 'AI · Web app',
-        context: 'Code the Cup Hackathon',
-        date: 'July 2026',
-        pitch: 'An AI football commentary app where two rival AI commentators trade live roast-battle banter over a replay of the 2022 World Cup Final.',
-        action: "Led our team's live demo, then directed a full migration to free-tier Gemini and Web Speech APIs, eliminating all costs.",
-        tags: [
+            { label: 'Node.js', color: 'tag-green' },
+            { label: 'Express', color: 'tag-blue' },
+            { label: 'Socket.io', color: 'tag-yellow' },
             { label: 'React.js', color: 'tag-purple' },
-            { label: 'Next.js', color: 'tag-blue' },
-            { label: 'Tailwind CSS', color: 'tag-green' },
-            { label: 'TypeScript', color: 'tag-blue' },
-            { label: 'Gemini API', color: 'tag-yellow' },
-            { label: 'Web Speech API', color: 'tag-orange' }
+            { label: 'Google Maps API', color: 'tag-orange' }
         ],
         buttons: [
-            { label: 'GitHub', icon: 'fab fa-github', href: 'https://github.com/lohit555/RivalRefs' },
-            { label: 'Demo', icon: 'fas fa-play', href: 'https://youtu.be/I3scA103eSU' }
+            { label: 'GitHub', icon: 'fab fa-github', href: 'https://github.com/lohit555/GeoShield' },
+            { label: 'Demo', icon: 'fas fa-play', href: 'https://youtu.be/8tVIzGkGMsE' }
         ]
-    },
-    {
-        image: 'Expecta.webp',
-        title: 'Expecta',
-        category: 'AI · Health tech',
-        context: 'Cursor Hackathon',
-        date: 'July 2026',
-        award: '🥈 2nd place',
-        pitch: 'An AI-powered pregnancy and breastfeeding safety app. It scans a barcode or ingredient list and returns a stage-specific Safe, Caution, or Avoid verdict.',
-        action: 'Directed the AI-assisted build, defining the safety-verdict logic sourced from ACOG, FDA, CDC, and NIH LactMed.',
-        tags: [
-            { label: 'React.js', color: 'tag-purple' },
-            { label: 'Next.js', color: 'tag-blue' },
-            { label: 'TypeScript', color: 'tag-blue' },
-            { label: 'Tailwind CSS', color: 'tag-green' }
-        ],
-        buttons: [
-            { label: 'GitHub', icon: 'fab fa-github', href: 'https://github.com/lohit555/Expecta' },
-            { label: 'Live demo', icon: 'fas fa-arrow-up-right-from-square', href: 'https://cursor-hackathon-july-2026-nine.vercel.app/' }
-        ]
-    },
+    },,
     {
         image: 'RivalRuns.webp',
-        number: 7,
+        number: 3,
         title: 'RivalRuns',
+        featured: true,
         category: 'Computer vision · Game',
         context: 'Hack the Valley Hack Day',
         date: 'July 2026',
@@ -156,10 +82,31 @@ const projects = [
             { label: 'GitHub', icon: 'fab fa-github', href: 'https://github.com/lohit555/RivalRuns' },
             { label: 'Demo', icon: 'fas fa-play', href: 'https://youtu.be/evwKSR_Tm4g' }
         ]
-    },
+    },,
+    {
+        image: 'Catan.webp',
+        number: 4,
+        title: 'Catan',
+        category: 'Java · Software design',
+        context: 'McMaster University',
+        date: 'January–March 2026',
+        pitch: 'A Java-based board game simulator modeling settlements, cities, roads, resources, trading, the Robber mechanic, and an AI-driven computer player, with a Python visualizer for the board state.',
+        action: "Implemented the AI's decision-making in Java using the Strategy pattern, designed the full UML class diagram in Eclipse Papyrus, and authored JUnit partition and boundary tests covering board limits, resources, and building logic.",
+        tags: [
+            { label: 'Java', color: 'tag-orange' },
+            { label: 'JUnit', color: 'tag-blue' },
+            { label: 'Eclipse Papyrus', color: 'tag-purple' },
+            { label: 'UML', color: 'tag-yellow' },
+            { label: 'Python', color: 'tag-green' }
+        ],
+        buttons: [
+            { label: 'GitHub', icon: 'fab fa-github', href: 'https://github.com/lohit555/Catan' },
+            { label: 'Demo', icon: 'fas fa-play', href: 'https://youtu.be/I_Pxknsg1I0' }
+        ]
+    },,
     {
         image: 'Perimeter.png',
-        number: 8,
+        number: 5,
         title: 'Perimeter',
         category: 'FinTech . Security',
         context: 'Ignition Hacks V7',
@@ -178,7 +125,69 @@ const projects = [
             { label: 'GitHub', icon: 'fab fa-github', href: 'https://github.com/lohit555/Perimeter' },
             { label: 'Live demo', icon: 'fas fa-arrow-up-right-from-square', href: 'https://perimeter-beta.vercel.app/' }
         ]
-    }
+    },,
+    {
+        image: 'Expecta.webp',
+        number: 6,
+        title: 'Expecta',
+        category: 'AI · Health tech',
+        context: 'Cursor Hackathon',
+        date: 'July 2026',
+        award: '🥈 2nd place',
+        pitch: 'An AI-powered pregnancy and breastfeeding safety app. It scans a barcode or ingredient list and returns a stage-specific Safe, Caution, or Avoid verdict.',
+        action: 'Directed the AI-assisted build, defining the safety-verdict logic sourced from ACOG, FDA, CDC, and NIH LactMed.',
+        tags: [
+            { label: 'React.js', color: 'tag-purple' },
+            { label: 'Next.js', color: 'tag-blue' },
+            { label: 'TypeScript', color: 'tag-blue' },
+            { label: 'Tailwind CSS', color: 'tag-green' }
+        ],
+        buttons: [
+            { label: 'GitHub', icon: 'fab fa-github', href: 'https://github.com/lohit555/Expecta' },
+            { label: 'Live demo', icon: 'fas fa-arrow-up-right-from-square', href: 'https://cursor-hackathon-july-2026-nine.vercel.app/' }
+        ]
+    },,
+    {
+        image: 'RivalRefs.webp',
+        number: 7,
+        title: 'RivalRefs',
+        category: 'AI · Web app',
+        context: 'Code the Cup Hackathon',
+        date: 'July 2026',
+        pitch: 'An AI football commentary app where two rival AI commentators trade live roast-battle banter over a replay of the 2022 World Cup Final.',
+        action: "Led our team's live demo, then directed a full migration to free-tier Gemini and Web Speech APIs, eliminating all costs.",
+        tags: [
+            { label: 'React.js', color: 'tag-purple' },
+            { label: 'Next.js', color: 'tag-blue' },
+            { label: 'Tailwind CSS', color: 'tag-green' },
+            { label: 'TypeScript', color: 'tag-blue' },
+            { label: 'Gemini API', color: 'tag-yellow' },
+            { label: 'Web Speech API', color: 'tag-orange' }
+        ],
+        buttons: [
+            { label: 'GitHub', icon: 'fab fa-github', href: 'https://github.com/lohit555/RivalRefs' },
+            { label: 'Demo', icon: 'fas fa-play', href: 'https://youtu.be/I3scA103eSU' }
+        ]
+    },,
+    {
+        image: 'WorDex.webp',
+        number: 8,
+        title: 'WorDex',
+        category: 'Systems · CLI game',
+        context: 'McMaster University',
+        date: 'November–December 2025',
+        pitch: 'A terminal-based Wordle-style game with user authentication, persistent history, and a global leaderboard, built in C with file I/O.',
+        action: 'Built a timestamped game history log with color-coded WIN/LOSS entries ordered by recency, and a global leaderboard ranking players by wins, games played, losses, win rate, and average guesses.',
+        tags: [
+            { label: 'C', color: 'tag-blue' },
+            { label: 'Makefile', color: 'tag-yellow' },
+            { label: 'File I/O', color: 'tag-green' }
+        ],
+        buttons: [
+            { label: 'GitHub', icon: 'fab fa-github', href: 'https://github.com/lohit555/WorDex' },
+            { label: 'Demo', icon: 'fas fa-play', href: 'https://youtu.be/MVTS1ZGwnl8' }
+        ]
+    },
 ];
 
 function renderProjects() {
@@ -186,10 +195,11 @@ function renderProjects() {
     if (!projectGrid) return;
 
     projectGrid.innerHTML = projects.map((project, index) => `
-        <article class="project-card spotlight-card">
+        <article class="project-card spotlight-card${project.featured ? ' featured-project' : ''}">
             <div class="project-image-wrap">
                 <img class="project-image" src="${project.image}" alt="${project.title} project screenshot" loading="lazy">
                 <span class="project-image-title">${project.title}</span>
+                ${project.featured ? '<span class="project-featured-label"><i class="fas fa-star"></i> Featured</span>' : ''}
                 <span class="project-number">${String(project.number || index + 1).padStart(2, '0')}</span>
                 ${project.award ? `<span class="project-award">${project.award}</span>` : ''}
             </div>

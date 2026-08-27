@@ -763,6 +763,38 @@ h2 i {
     transform: translateY(-4px);
 }
 
+.project-card.featured-project {
+    border-color: rgba(56, 189, 248, 0.3);
+    background: linear-gradient(145deg, rgba(18, 28, 49, 0.88), rgba(14, 21, 38, 0.72));
+}
+
+.project-card.featured-project .project-card-body {
+    padding-top: 25px;
+}
+
+.project-featured-label {
+    position: absolute;
+    right: 14px;
+    bottom: 14px;
+    z-index: 2;
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 6px 9px;
+    border: 1px solid rgba(56, 189, 248, 0.3);
+    border-radius: 999px;
+    background: rgba(7, 11, 22, 0.78);
+    color: #bae6fd;
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 0.04em;
+    backdrop-filter: blur(8px);
+}
+
+.project-featured-label i {
+    color: #facc15;
+}
+
 .project-image-wrap {
     position: relative;
     height: 220px;
