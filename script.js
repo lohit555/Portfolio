@@ -21,6 +21,7 @@ const projects = [
         title: 'SafeGuard',
         featured: true,
         category: 'AI · Full-stack',
+        filters: ['ai', 'full-stack', 'hackathons'],
         context: 'MacHacks',
         date: 'March 2026',
         pitch: 'An AI-powered workplace hazard detection app. Users upload site photos and receive a severity-ranked hazard list and action checklist powered by Gemini.',
@@ -43,6 +44,7 @@ const projects = [
         title: 'GeoShield',
         featured: true,
         category: 'Full-stack · Real-time',
+        filters: ['full-stack', 'systems', 'hackathons'],
         context: 'McMaster Engineering Competition',
         date: 'November 2025',
         pitch: 'A real-time disaster response platform connecting survivors requesting help with volunteers who respond, plus a coordinator dashboard to monitor operations, all visualized on a live interactive map.',
@@ -65,6 +67,7 @@ const projects = [
         title: 'RivalRuns',
         featured: true,
         category: 'Computer vision · Game',
+        filters: ['games', 'systems', 'hackathons'],
         context: 'Hack the Valley Hack Day',
         date: 'July 2026',
         award: '🥈 2nd place',
@@ -88,6 +91,7 @@ const projects = [
         number: 4,
         title: 'Catan',
         category: 'Java · Software design',
+        filters: ['systems'],
         context: 'McMaster University',
         date: 'January–March 2026',
         pitch: 'A Java-based board game simulator modeling settlements, cities, roads, resources, trading, the Robber mechanic, and an AI-driven computer player, with a Python visualizer for the board state.',
@@ -109,6 +113,7 @@ const projects = [
         number: 5,
         title: 'Perimeter',
         category: 'FinTech . Security',
+        filters: ['security', 'full-stack', 'hackathons'],
         context: 'Ignition Hacks V7',
         date: 'August 2026',
         pitch: "A token isolation platform where every merchant gets its own encrypted payment token, locked to that merchant's domain and assigned its own spending limit. This ensures that a breach at any one merchant is automatically contained by revoking and replacing only the affected token.",
@@ -131,6 +136,7 @@ const projects = [
         number: 6,
         title: 'Expecta',
         category: 'AI · Health tech',
+        filters: ['ai', 'full-stack', 'hackathons'],
         context: 'Cursor Hackathon',
         date: 'July 2026',
         award: '🥈 2nd place',
@@ -152,6 +158,7 @@ const projects = [
         number: 7,
         title: 'RivalRefs',
         category: 'AI · Web app',
+        filters: ['ai', 'full-stack', 'hackathons'],
         context: 'Code the Cup Hackathon',
         date: 'July 2026',
         pitch: 'An AI football commentary app where two rival AI commentators trade live roast-battle banter over a replay of the 2022 World Cup Final.',
@@ -174,6 +181,7 @@ const projects = [
         number: 8,
         title: 'WorDex',
         category: 'Systems · CLI game',
+        filters: ['systems', 'games'],
         context: 'McMaster University',
         date: 'November–December 2025',
         pitch: 'A terminal-based Wordle-style game with user authentication, persistent history, and a global leaderboard, built in C with file I/O.',
@@ -195,7 +203,7 @@ function renderProjects() {
     if (!projectGrid) return;
 
     projectGrid.innerHTML = projects.map((project, index) => `
-        <article class="project-card spotlight-card${project.featured ? ' featured-project' : ''}">
+        <article class="project-card spotlight-card${project.featured ? ' featured-project' : ''}" data-filters="${project.filters.join(' ')}">
             <div class="project-image-wrap">
                 <img class="project-image" src="${project.image}" alt="${project.title} project screenshot" loading="lazy">
                 <span class="project-image-title">${project.title}</span>
@@ -217,6 +225,18 @@ function renderProjects() {
             </div>
         </article>
     `).join('');
+}
+
+function setupProjectFilters() {
+    const filters = [...document.querySelectorAll('.project-filter')];
+    const cards = [...document.querySelectorAll('.project-card')];
+    filters.forEach(filter => filter.addEventListener('click', () => {
+        const selected = filter.dataset.filter;
+        filters.forEach(button => button.classList.toggle('active', button === filter));
+        cards.forEach(card => {
+            card.hidden = selected !== 'all' && !card.dataset.filters.split(' ').includes(selected);
+        });
+    }));
 }
 
 function setupSpotlights() {
@@ -287,4 +307,5 @@ function setupSectionReveals() {
 renderProjects();
 setupNavigation();
 setupSectionReveals();
+setupProjectFilters();
 setupSpotlights();
