@@ -1,4 +1,4 @@
-const roles = ['Software Developer', 'Full-Stack Developer', 'AI App Builder'];
+const roles = ['Software Developer', 'Full-Stack Developer', 'AI App Builder', 'Machine Learning Researcher'];
 const roleRotator = document.getElementById('roleRotator');
 const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 

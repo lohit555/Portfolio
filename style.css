@@ -574,6 +574,10 @@ h2 i {
     position: relative;
 }
 
+.timeline-item + .timeline-item {
+    margin-top: 28px;
+}
+
 .timeline-dot {
     position: absolute;
     top: 25px;
